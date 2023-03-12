@@ -44,6 +44,7 @@ input {
     .item {
       width: 50vw;
       font-family: "Gill Sans", sans-serif;
+      font-size: 0.9rem;
     }
     .bayan-images {
       max-width: 40vw;
@@ -57,6 +58,7 @@ input {
     .item {
       width: 90vw;
       font-family: Arial, sans-serif;
+      font-size: 0.7rem;
     }
     .bayan-images {
       max-width: 70vw;
