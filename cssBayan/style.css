@@ -1,23 +1,23 @@
 input {
     position: absolute;
     opacity: 0;
-  }
-  
-  .item {
+}
+
+.item {
     font-family: Georgia, serif;
     margin: 10px auto;
     width: 30vw;
     border-radius: 5px;
     overflow: hidden;
-  }
-  
-  .bayan-images {
+}
+
+.bayan-images {
     max-height: 0;
     max-width: 20vw;
     transition: all 0.7s ease-out;
-  }
-  
-  .accordion-label {
+}
+
+.accordion-label {
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -25,20 +25,20 @@ input {
     cursor: pointer;
     background: #333;
     color: #fff;
-  }
-  
-  .head-block {
+}
+
+.head-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
   
   .footer-block {
     max-height: 0;
     transition: all 0.7s;
   }
   
-/* Adapt */
+/* Adaptive */
 
 @media (max-width: 1200px) {
     .item {
@@ -62,4 +62,43 @@ input {
       max-width: 70vw;
     }
   }
-  
+
+/* Accordion */
+
+input:hover ~ .accordion-label > .footer-block {
+    margin: 10px auto;
+    max-height: 35vh;
+}
+
+input:checked ~ .accordion-label > .footer-block {
+    margin: 10px auto;
+    max-height: 35vh;
+}
+
+input:hover ~ .accordion-label > .footer-block img {
+    max-height: 30vh;
+}
+
+input:checked ~ .accordion-label > .footer-block img {
+    max-height: 30vh;
+}
+
+.bayan-img-checked {
+    display: none;
+}
+
+.accordion-label:hover > .head-block > .bayan-img-not-checked {
+    display: none;
+}
+
+.accordion-label:hover > .head-block > .bayan-img-checked {
+    display: block;
+}
+
+input:checked ~ .accordion-label > .head-block > .bayan-img-not-checked {
+    display: none;
+}
+
+input:checked ~ .accordion-label > .head-block > .bayan-img-checked {
+    display: block;
+}
