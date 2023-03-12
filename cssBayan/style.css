@@ -1,0 +1,40 @@
+input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .item {
+    font-family: Georgia, serif;
+    margin: 10px auto;
+    width: 30vw;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .bayan-images {
+    max-height: 0;
+    max-width: 20vw;
+    transition: all 0.7s ease-out;
+  }
+  
+  .accordion-label {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+  }
+  
+  .head-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-block {
+    max-height: 0;
+    transition: all 0.7s;
+  }
+  
