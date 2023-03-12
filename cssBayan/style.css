@@ -38,3 +38,28 @@ input {
     transition: all 0.7s;
   }
   
+/* Adapt */
+
+@media (max-width: 1200px) {
+    .item {
+      width: 50vw;
+      font-family: "Gill Sans", sans-serif;
+    }
+    .bayan-images {
+      max-width: 40vw;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .head-block {
+      flex-direction: column;
+    }
+    .item {
+      width: 90vw;
+      font-family: Arial, sans-serif;
+    }
+    .bayan-images {
+      max-width: 70vw;
+    }
+  }
+  
